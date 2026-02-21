@@ -14,6 +14,6 @@ Implements lexical analysis, parsing + AST construction, scoped symbol resolutio
 # Architecture
 Source → Lexer → Parser/AST → Semantic Analysis → WAT/WASM Codegen
 
-Attribution
+# Attribution
 This repository includes starter/framework code provided by CSE-450-Fall2025 under the MIT License.
 Compiler logic (parsing/AST, semantic analysis, and WebAssembly backend) was implemented and extended as part of the project.
