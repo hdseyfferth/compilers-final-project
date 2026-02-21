@@ -55,3 +55,8 @@ build/
 
 # If your compiled binary is named Project5
 Project5
+
+# Example/test outputs
+demo/current/
+*.compile.log
+*.wat2wasm.log

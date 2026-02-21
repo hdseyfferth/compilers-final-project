@@ -8,7 +8,7 @@
 #  clean - Remove excess files
 
 # Project-specific settings
-TARGET := Project5
+TARGET := Compiler
 
 # Identify compiler to use
 CXX := c++

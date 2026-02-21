@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Run from the tests/ directory
-BIN="../Project5"
+# Run from the demo/ directory
+BIN="../Compiler"
 EXPECTED_DIR="expected"
 CURRENT_DIR="current"
 

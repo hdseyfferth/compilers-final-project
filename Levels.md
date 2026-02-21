@@ -1,8 +1,5 @@
 # Levelization Map
 
-When designing a C++ project with more than 4 or 5 custom header files, it's a good idea to map out what order those files should be included in.
-This strategy will help you avoid circular includes, perform cleaner testing and debugging, and plan better when adding new features.
-
 | File            | Level | Direct Dependencies                 |
 | --------------- | ----- | ----------------------------------- |
 | lexer.hpp       | 0     | (_none_)                            |

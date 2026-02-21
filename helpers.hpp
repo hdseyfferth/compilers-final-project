@@ -5,9 +5,6 @@
 #include "lexer.hpp"
 
 // === Types and Type helper functions ===
-
-// !!!!!! NOTE: INT and STRING types are not yet in use!
-
 enum class Type {
   NONE, DOUBLE, INT, STRING, UNKNOWN
 };

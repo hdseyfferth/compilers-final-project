@@ -1,4 +1,3 @@
-// -- Some header files that are likely to be useful --
 #include <assert.h>
 #include <fstream>
 #include <iostream>
