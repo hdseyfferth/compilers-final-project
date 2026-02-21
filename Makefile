@@ -17,9 +17,9 @@ CXX := c++
 CFLAGS_all := -Wall -Wextra -std=c++2a
 
 # Test file (wildcard to be found when used.)
-TEST_FILES     := $(wildcard tests/*.strix)
-EXPECTED_DIR   := tests/expected
-EXPECTED_FILES := $(patsubst tests/%.strix,$(EXPECTED_DIR)/%.expected,$(TEST_FILES))
+TEST_FILES     := $(wildcard demo/*.strix)
+EXPECTED_DIR   := demo/expected
+EXPECTED_FILES := $(patsubst demo/%.strix,$(EXPECTED_DIR)/%.expected,$(TEST_FILES))
 
 # Flags based on compilation type.
 #   Default flags turn on optimizations
@@ -38,10 +38,10 @@ debug:	$(TARGET)
 grumpy:	CFLAGS := $(CFLAGS_grumpy)
 grumpy:	$(TARGET)
 
-tests: $(TARGET)
-	@echo "Running tests..."
-	@cd tests && ./run_tests.sh
-	@echo "Tests completed."
+demo: $(TARGET)
+	@echo "Running demo example tests..."
+	@cd demo && ./run_demo.sh
+	@echo "Example tests completed."
 
 # Always run the tests, even if nothing has changed
 .PHONY: clean debug grumpy tests
@@ -53,7 +53,7 @@ $(TARGET):	$(TARGET).cpp $(KEY_FILES)
 	$(CXX) $(CFLAGS) $(TARGET).cpp -o $(TARGET)
 
 clean:
-	rm -f $(TARGET) *.o tests/current/test-*
+	rm -f $(TARGET) *.o demo/current/test-*
 
 # Debugging information
 print-%: ; @echo '$(subst ','\'',$*=$($*))'
