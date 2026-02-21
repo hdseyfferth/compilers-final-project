@@ -39,3 +39,19 @@
 
 # debug information files
 *.dwo
+
+# macOS
+.DS_Store
+
+# Build directories
+build/
+
+# Generated WebAssembly output
+*.wasm
+*.wat
+
+# Logs
+*.log
+
+# If your compiled binary is named Project5
+Project5
